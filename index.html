@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
+    <title>X-cola</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="/img/Лого.png" alt="Logo">
+    </div>
+    <div class="header-text">
+        Пройди лабиринт и получи баночку X-cola
+    </div>
+    <form action="/Game/" method="post" autocomplete="off">
+        <label for="name"></label>
+        <input type="text" id="name" placeholder="Введите имя пользователя" name = "name" onkeydown="return (event.keyCode != 13);"><br><br>
+        <button class="play" type="submit">Играть</button>
+    </form>
+    <form action="/records.php">
+        <button class="records" type="submit">Рекорды</button>
+    </form>
+    <div class="animation-area">
+        <ul class="circle-area">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>
